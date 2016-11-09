@@ -1,0 +1,820 @@
+body{
+    background: #f0f0f0;
+    margin: 0;
+    font-family: "PT Sans";
+}
+
+.wrapper{
+    width: 1200px;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 5px 0px 5px #ccc,
+                -5px 0px 5px #ccc;
+}
+
+.main-header{    
+    position: relative;
+}
+
+.icon-cross,
+.mobile-header{
+    display: none;
+}
+
+.logo-triangle{
+    position: absolute;
+    left: 50%;
+    margin-left: -68.5px;
+    z-index: 1;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    margin-left: -33.5px;
+    z-index: 2;
+}
+
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header ul {
+    margin: 0; 
+    font-size: 0; 
+    padding: 0;
+} 
+
+.main-header li { 
+    display: inline-block; 
+    width: 240px; 
+    text-align: center; 
+    font-size: 14px; 
+    font-weight: bold; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+} 
+
+.main-header li:nth-child(3) { 
+    margin-left: 240px ; 
+}
+
+a{
+    text-decoration: none;    
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+li > a:hover{
+    color: #a8c9df;
+}
+
+li > a:active{
+    color: #cacaca;
+}
+
+.active a{
+    color: #766357;
+}
+
+.active a:hover{
+    color: #604e43;
+}
+
+.active a:active{
+    color: #dbd8d5;
+}
+
+.welcome{
+    position: relative;
+    background-image: url("../img/photo-background@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -85px;
+    height: 510px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .welcome { background-image: url(../img/photo-background@2x.jpg); background-size: cover; }
+}
+
+.text-welcome{
+    position: absolute;
+    left: 50%;
+    margin-left: -92.5px;
+    top: 75px;
+}
+
+.text-tothe{
+    position: absolute;
+    left: 50%;
+    margin-left: -122.5px;
+    top: 130px;
+}
+
+.text-sedona{
+    position: absolute;
+    left: 50%;
+    margin-left: -225px;
+    top: 210px;
+}
+
+.text-because{
+    position: absolute;
+    left: 50%;
+    margin-left: -142px;
+    top: 350px;
+}
+
+.white-triangles{
+    position: absolute;
+    bottom: 0;
+}
+
+.promo{
+    padding-bottom: 40px;
+}
+
+.sedona-is{
+    padding-top: 55px;
+    padding-left: 400px;
+    font-weight: bold;
+    font-size: 21px;
+    width: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sedona-is+p{
+    margin-top: 40px;
+}
+
+p{    
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+.reason-title+p{
+    margin-bottom: 25px;
+}
+
+.reason1, .reason2{
+    background: #81b3d2;
+    color: #ffffff;
+}
+
+.reason p:last-child {
+    width: 200px;
+    padding-left: 25%;
+}
+
+.reason-title{
+    position: relative;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    width: 200px;
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;   
+    line-height: 27px; 
+}
+
+
+.reason p { 
+    line-height: 18px; 
+}
+
+.reason{
+    width: 400px;
+    float: left;
+    padding-bottom: 22px;
+}
+
+
+.features-row{
+    padding-bottom: 70px;
+    padding-top: 145px;
+}
+
+.features-title{
+    position: relative;
+    padding-left: 130px;
+    padding-right: 130px;
+    width: 140px;
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.features-item{
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    margin-right: -5px;
+}
+
+.features-item p{
+    width: 270px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.img-r1{
+    float: right;
+    background: url("../img/photo-city@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -78px;
+    overflow: hidden;
+    height: 256px;
+    width: 800px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .img-r1 { background-image: url(../img/photo-city@2x.jpg); background-size: cover; }
+}
+
+
+.img-r2{  
+    float: left;
+    background: url("../img/photo-bridge@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -78px;
+    overflow: hidden;
+    height: 256px;
+    width: 800px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .img-r2 { background-image: url(../img/photo-bridge@2x.jpg); background-size: cover; }
+}
+
+.icon-home{    
+    position: absolute;
+    left: 50%;
+    margin-left: -37px;
+    top: -100px;
+}
+
+.icon-burger{
+    position: absolute;
+    left: 50%;
+    margin-left: -38px;
+    top: -97px;
+}
+
+.icon-gift{
+    position: absolute;
+    left: 50%;
+    margin-left: -31.5px;
+    top: -103px;
+}
+
+.grey-row{
+    background-color: #eeeeee;
+}
+
+.hostel{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 55px;
+    padding-bottom: 65px;
+    width: 434px;
+}
+.question{
+    font-size: 30px;
+    width: 300px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.question+p{
+    width: inherit;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.hostel-btn{
+    display: inline-block;
+    height: 45px;
+    width: 460px;
+    background: #81b3d2;
+    color: white;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.hostel-btn:hover{
+    background: #669ec0;
+}
+
+.hostel-btn:active{
+    background: #5496bd;
+    color: 94b9d2;
+}
+
+.hostel-btn:disabled{
+    background: #e5e5e5;
+}
+
+.main-footer{
+    background: white;
+    overflow: hidden;
+}
+
+.map{
+   background: url("../img/map.png");
+   background-repeat: no-repeat;
+   height: 350px; 
+}
+
+
+.footer-hashtag,
+.footer-social,
+.footer-copyright{
+    float: left;
+}
+
+.hashtag{
+    width: 150px;
+    font-size: 21px;
+    padding-left: 130px;
+    padding-right: 250px;
+    padding-top: 29px;
+}
+
+.footer-social{
+    padding-top: 40px;
+    padding-right: 350px;
+}
+
+.social-btn{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+.social-btn-tw{
+    background: url("../img/social.png") 0 0;
+    
+}
+
+.social-btn-tw:hover{
+    background: url("../img/social-hvr.png") 0 0;
+    
+}
+
+.social-btn-tw:active{
+    background: url("../img/social-dwn.png") 0 0;
+    
+}
+
+
+.social-btn-fb{
+    background: url("../img/social.png") -54px 0;
+}
+
+.social-btn-fb:hover{
+    background: url("../img/social-hvr.png") -54px 0;
+    
+}
+
+.social-btn-fb:active{
+    background: url("../img/social-dwn.png") -54px 0;
+    
+}
+
+.social-btn-ut{
+    background: url("../img/social.png") -105px 0;
+}
+
+.social-btn-ut:hover{
+    background: url("../img/social-hvr.png") -105px 0;
+    
+}
+
+.social-btn-ut:active{
+    background: url("../img/social-dwn.png") -105px 0;
+    
+}
+
+
+.footer-copyright{
+    padding-top: 35px;
+    position: relative;
+}
+
+.footer-copyright p,{
+    float: left;
+}
+
+.html-logo{
+    position: absolute;
+    left: 100px;
+    top: 42px;
+}
+
+.html-logo:hover svg path {
+  fill: #81b3d2;
+}
+
+.html-logo:active svg path {
+  fill: #b2b2b2;
+}
+
+@media(max-width: 1200px){
+    
+    .wrapper{
+        width: 768px;
+    }
+    
+    .main-header li{
+        width: 153px;
+    }
+    
+    .main-header li:nth-child(3) { 
+        margin-left: 153px; 
+    }
+    
+    .welcome{
+        width: 768px;
+        background-size: 100%;
+        background-position: center;
+    }
+    
+    .white-triangles{
+        width:100%;
+        bottom: -10px;
+    }
+    
+    .sedona-is{
+        padding-left: 140px;
+        width: 486px;
+    }
+    
+    .reason{
+        width: 256px;
+    }
+    
+    .reason-title{
+        width: 154px;
+        padding-left: 51px;
+    }
+    
+    .reason p:last-child {
+        width: 171px;
+        padding-left: 40px;
+    }
+    
+    .img-r1{
+        width: 512px;
+        background-size: 100%;
+        background-position: 0 0;
+    }
+    
+    .features-item{
+        width: 256px;
+        
+    }
+    
+    .features-title{
+        padding: 0 58px;
+    }
+    
+    .features-item p{
+        width: 165px;
+        padding: 0 45.5px;
+    }
+    
+     .img-r2{
+        width: 512px;
+        background-size: 100%;
+        background-position: 0 0;
+    }
+    
+    .map{
+        width: 768px;
+        background-position: center;
+    }
+    
+    .footer-hashtag,
+    .footer-copyright{
+        width: 256px;
+    }
+    
+    .hashtag{
+        padding-left: 53px;
+        padding-right: 53px;        
+    }
+    
+    .footer-social{
+        width: 205px;
+        padding-left: 51px;
+        padding-right: 0;
+    }
+    
+    .html-logo{
+        left: 185px;
+    }
+}
+
+@media(max-width: 480px){
+    .wrapper{
+        width: 320px;
+    }
+    
+    .logo,
+    .logo-triangle{
+        top: 226px;
+    }
+    
+    .mobile-header{
+        display: inline-block;
+        width: 320px;
+        height: 56px;
+        position: relative;        
+    }
+    
+    .main-header li:nth-child(4) {
+        box-shadow: 0px -5px 10px -3px #739fba inset;
+    }
+        
+    .icon-menu{
+        position: absolute;
+        right: 20px;
+        top: 17px;
+    }
+    
+    .main-header li:nth-child(3) { 
+        margin-left: 0px ; 
+    }  
+   
+    .main-header li{
+        width: 320px;
+        background: #81b3d2; 
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    
+    .main-header li:nth-child(1),
+    .main-header li:nth-child(2),
+    .main-header li:nth-child(3){
+        border-bottom: 1px solid #678fa8;
+    }
+    
+    .main-header li:nth-child(2),
+    .main-header li:nth-child(3),
+    .main-header li:nth-child(4){
+        border-top: 1px solid #9ac2db;
+    }
+    
+    li > a{
+        color: #ffffff;
+        font-size: 18px;
+    }
+    
+    .icon-cross{
+        display: inherit;
+        position: absolute;
+        right: 20px;
+        top: 17px;
+    }
+    
+    .welcome{
+        width: 320px;
+        height: 390px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+    
+    .text-welcome{
+        width: 140px;
+        top: 45px;
+        left: 50%;
+        margin-left: -70px;
+    }
+    
+    .text-tothe{
+        width: 196px;
+        top: 90px;
+        left: 50%;
+        margin-left: -98px;
+    }
+    
+    .text-sedona{
+        width: 280px;
+        top: 170px;
+        left: 50%;
+        margin-left: -140px;
+    }
+    
+    .text-because{
+        width: 197px;
+        top: 290px;
+        left: 50%;
+        margin-left: -98.5px;
+    }
+    
+    .white-triangles{
+        bottom: -13px;
+        transform: scaleX(0.9) scale(2);      
+    }
+    
+    .promo{
+        padding-bottom: 20px;
+    }
+    
+    .sedona-is{
+        width: 260px;
+        padding-left: 30px;
+        font-size: 18px;
+        padding-top: 27px;
+    }
+    
+    .sedona-is+p{
+        width: 260px;
+        padding-left: 30px;
+    }
+    
+    .reason-row1:before{
+        width: 320px;
+        height: 37px;
+        content: url("../img/white-triangle.png");
+	}
+    
+    .reason{
+        width: 320px;
+    }
+    
+    .reason-title{
+        width: 257px;
+        padding-left: 31.5px;
+    }
+    
+    .reason p:last-child {
+        width: 275px;
+        padding-left: 20px;
+    }
+    
+    .img-r1{
+        width: 320px;
+        height: 256px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .features-row{
+        width: 320px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    
+    .features-item{
+        padding-top: 30px;
+    }
+    
+    .features-title{
+        padding-left: 70px;
+        text-align: left;
+    }
+    
+    .features-title+p{
+        width: 210px;
+        padding-left: 70px;
+        text-align: left;
+    }
+    
+    .icon-home{
+        width: 37px;
+        height: 37px;
+        left: 60px;
+        top: 20px;
+    }
+    
+    .icon-burger{
+        width: 37px;
+        height: 37px;
+        left: 60px;
+        top: 20px;
+    }
+    
+    .icon-gift{
+        width: 37px;
+        height: 37px;
+        left: 55px;
+        top: 20px;
+    }
+    
+    .img-r2{
+        display: none;
+    }
+    
+    .reason-row2:after{
+        display: inline-block;
+        width: 320px;
+        height: 256px;
+        content: url("../img/photo-bridge@1x.jpg");
+        overflow: hidden;
+    }    
+    
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        .reason-row2:after{
+        content: url("../img/photo-bridge@2x.jpg");
+        }   
+    }
+    
+    .features-title{
+        width: 208px;
+    }
+    
+    .reason p:last-child{
+        width: 250px;
+        padding-left: 35px;
+    }
+    
+    .reason3:after{
+        width: 280px;
+        height: 1px;
+        content: url("../img/line.png");
+    }
+    
+    .reason4:after{
+        width: 280px;
+        height: 1px;
+        content: url("../img/line.png");
+    }
+    
+    .hostel{
+        width: 280px;
+        padding-bottom: 50px;
+    }
+    
+    .question{
+        font-size: 21px;
+        width: 210px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    
+    .question+p{
+        width: 270px;
+        line-height: 24px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 26px;
+    }
+    
+    .hostel-btn{
+        width: 280px;
+    }
+    
+    .map{
+        width: 320px;
+        background-position: center;
+    }
+    
+    .footer-hashtag,
+    .footer-copyright{
+        width: 320px;
+    }
+    
+    .hashtag{
+        padding-left: 85px;
+        padding-right: 85px;  
+        padding-top: 19px;
+    }
+    
+    .footer-social{
+        width: 160px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 10px;
+    }
+     
+    .footer-copyright{
+        padding-top: 25px;
+    }
+    
+    .footer-copyright p{
+        width: 91px;
+        padding-left: 95px;        
+    }
+       
+    .html-logo{
+        left: 195px;
+        top: 32px;
+    }            
+}
