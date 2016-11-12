@@ -2,6 +2,7 @@ body{
     background: #f0f0f0;
     margin: 0;
     font-family: "PT Sans";
+    word-wrap: break-word;
 }
 
 .wrapper{
@@ -231,7 +232,6 @@ p{
     background: url("../img/photo-city@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 -78px;
-    overflow: hidden;
     height: 256px;
     width: 800px;
 }
@@ -246,7 +246,6 @@ p{
     background: url("../img/photo-bridge@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 -78px;
-    overflow: hidden;
     height: 256px;
     width: 800px;
 }
